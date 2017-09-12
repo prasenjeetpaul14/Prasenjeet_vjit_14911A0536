@@ -85,11 +85,7 @@ public class StudentGroup implements StudentArrayOperation
 		}
 		else
 		{
-			ArrayList<Student> array = new ArrayList<Student>();
-			for(int i=0;i<this.students.length;i++)
-			{
-				array.add(this.students[i]);
-			}
+			ArrayList<Student> array = getArrayList();
 			array.add(0, student);
 			this.students =  (Student[]) array.toArray(students);
 		}
@@ -104,11 +100,7 @@ public class StudentGroup implements StudentArrayOperation
 		}
 		else
 		{
-			ArrayList<Student> array = new ArrayList<Student>();
-			for(int i=0;i<this.students.length;i++)
-			{
-				array.add(this.students[i]);
-			}
+			ArrayList<Student> array = getArrayList();
 			array.add(this.students.length, student);
 			this.students =  (Student[]) array.toArray(students);
 		}
@@ -123,11 +115,7 @@ public class StudentGroup implements StudentArrayOperation
 		}
 		else
 		{
-			ArrayList<Student> array = new ArrayList<Student>();
-			for(int i=0;i<this.students.length;i++)
-			{
-				array.add(this.students[i]);
-			}
+			ArrayList<Student> array = getArrayList();
 			array.add(index, student);
 			this.students =  (Student[]) array.toArray(students);
 		}
